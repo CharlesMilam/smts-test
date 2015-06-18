@@ -1,0 +1,130 @@
+body {
+  background-color: #4CAF50;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #212121;
+}
+
+.wrapper {
+  display: table;
+  height: 100%;
+  text-align: left;
+  width: 100%;
+}
+
+header {
+  display: table-row;
+  height: 1px;
+}
+
+main {
+  display: table;
+  height: 100%;
+  margin: 20px 0 20px 0;
+  width: 100%;
+}
+
+.box {
+  display: table-cell;
+}
+
+.content {
+  padding: 0;
+  margin: 10px;
+  width: 50%;
+}
+
+.sidebar {
+  margin: 10px;
+  width: 20%;
+}
+
+.sidebar .card {
+  width: 50%;
+}
+
+footer {
+  background-color: #388e3c;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  display: table-row;
+  height: 1px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #b6b6b6;
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.2);
+  margin: 0;
+  padding: 0 15px 0 15px;
+  width: 100%;
+}
+
+#contact-form {
+  background-color: #C8E6C9;
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.2);
+  height: 35%;
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+
+#contact-form h3 {
+  text-align: center;
+}
+
+#contact-form input, label, textarea {
+  box-shadow: none;
+  display: block;
+  margin: 5px auto 3px auto;
+  padding: 5px 5px 5px 5px;
+  width: 80%;
+}
+
+#contact-form input, textarea {
+  border: 1px solid #b6b6b6;
+  margin-top: -5px;
+}
+
+#contact-form button {
+  background-color: #2196f3;
+  border: none;
+  border-radius: 1px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+  display: block;
+  height: 30px;
+  margin: 10px auto 10px auto;
+  width: 65%;
+}
+
+
+#header-img img {
+  width: 100%;
+}
+
+#stickynav {
+  background-color: #388E3C;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  height: 50px;
+  margin-top: -20px;
+  width: 100%;
+}
+#stickynav li {
+  background-color: #388E3C;
+  color: #ffffff;
+  display: inline;
+  float: left;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  margin-left: 3rem;
+  padding: 12px 10px 13px 10px;
+}
+
+#stickynav li:hover{
+  background-color: #4CAF50;
+}
+
+@media (max-width: 420px) {
+  .box {
+    display: block;
+    width: 100%;
+  }
+}
+
