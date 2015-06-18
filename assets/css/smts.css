@@ -1,6 +1,6 @@
 body {
   background-color: #4CAF50;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   color: #212121;
 }
 
@@ -19,7 +19,7 @@ header {
 main {
   display: table;
   height: 100%;
-  margin: 20px 0 20px 0;
+  /*margin: 20px 0 20px 0;*/
   width: 100%;
 }
 
@@ -28,18 +28,39 @@ main {
 }
 
 .content {
-  padding: 0;
-  margin: 10px;
   width: 50%;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #b6b6b6;
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+}
+
+.card h2 {
+   margin: 3px auto 15px auto;
+}
+
+.card h4 {
+   margin: 3px auto 15px auto;
+}
+
+.content .card {
+
+  /*margin: 15px, auto;*/
+  /*padding: 0 15px;*/
+  width: 95%;
 }
 
 .sidebar {
-  margin: 10px;
+  /*margin: 10px;*/
   width: 20%;
 }
 
+
 .sidebar .card {
-  width: 50%;
+  width: 100%;
 }
 
 footer {
@@ -49,25 +70,18 @@ footer {
   height: 1px;
 }
 
-.card {
-  background-color: #ffffff;
-  border: 1px solid #b6b6b6;
-  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.2);
-  margin: 0;
-  padding: 0 15px 0 15px;
-  width: 100%;
-}
-
 #contact-form {
   background-color: #C8E6C9;
   box-shadow: 0 12px 15px 0 rgba(0,0,0,0.2);
   height: 35%;
-  margin: 0;
-  padding: 10px 0 10px 0;
+  width: 80%;
+  padding: 0 auto 10px auto;
+  padding-bottom: 10px;
 }
 
 #contact-form h3 {
   text-align: center;
+  padding-top: 10px;
 }
 
 #contact-form input, label, textarea {
@@ -89,9 +103,9 @@ footer {
   border-radius: 1px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.2);
   display: block;
-  height: 30px;
+  min-height: 30px;
   margin: 10px auto 10px auto;
-  width: 65%;
+  min-width: 65%;
 }
 
 
