@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #4CAF50;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -12,6 +18,7 @@ body {
 }
 
 header {
+  /*background-image: url("../images/smts-header.jpg");*/
   display: table-row;
   height: 1px;
 }
@@ -29,14 +36,15 @@ main {
 
 .content {
   width: 50%;
+  margin: 3em 1em;
 }
 
 .card {
   background: #ffffff;
   border: 1px solid #b6b6b6;
   box-shadow: 0 12px 15px 0 rgba(0,0,0,0.2);
-  margin-bottom: 30px;
-  padding: 5px;
+  margin: 2em 0 3em 0;
+  /*padding: 5px;*/
 }
 
 .card h2 {
@@ -52,6 +60,18 @@ main {
   /*margin: 15px, auto;*/
   /*padding: 0 15px;*/
   width: 95%;
+}
+
+.card-content {
+  padding: 1em;
+}
+
+.card-content h1, h2, h3, h4 {
+  margin: 1em;
+}
+
+.card-content p {
+  margin: 1em;
 }
 
 .sidebar {
@@ -75,14 +95,15 @@ footer {
   background-color: #C8E6C9;
   box-shadow: 0 12px 15px 0 rgba(0,0,0,0.2);
   height: 35%;
-  width: 80%;
-  padding: 0 auto 10px auto;
+  width: 90%;
+  margin: 0 auto;
+  /*padding: 32px auto 10px auto;*/
   padding-bottom: 10px;
 }
 
 #contact-form h3 {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 9px;
 }
 
 #contact-form input, label, textarea {
@@ -109,6 +130,10 @@ footer {
   min-width: 65%;
 }
 
+#header-img {
+    background-color: #b6b6b6;
+    height: 20em;
+}
 
 #header-img img {
   width: 100%;
@@ -117,8 +142,8 @@ footer {
 #stickynav {
   background-color: #388E3C;
   box-shadow: 0 3px 5px rgba(0,0,0,0.2);
-  height: 50px;
-  margin-top: -20px;
+  height: 3.25em;
+  /*margin-top: -20px;*/
   width: 100%;
 }
 #stickynav li {
@@ -140,6 +165,9 @@ footer {
   .box {
     display: block;
     width: 100%;
+  }
+  #stickynav {
+      display: none;
   }
 }
 
