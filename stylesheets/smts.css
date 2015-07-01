@@ -223,7 +223,7 @@ footer {
 
   /* line 215, ../sass/smts.scss */
   .bit-60 {
-    width: 100%;
+    width: 100% !important;
   }
 
   /* line 218, ../sass/smts.scss */

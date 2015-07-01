@@ -213,7 +213,7 @@ footer {
     width: 100%;
   }
   .bit-60 {
-    width: 100%;
+    width: 100% !important;
   }
   .bit-75 {
     width: 100%;
@@ -227,5 +227,8 @@ footer {
   #contact-form {
     @include box-shadow-med;
   }
+}
+@media (min-width: 30em) and (max-width: 50em) {
+
 }
 
