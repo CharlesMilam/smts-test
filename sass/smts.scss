@@ -63,21 +63,14 @@ h3 {
 
 .stickynav {
   background-color: $primary-color-dark;
-  max-width: 100%;
-  // position: fixed;
+  min-width: 100%;
+  position: fixed;
 }
 
 .navbar-menu {
   background-color: $primary-color-dark;
-  // border-bottom: 1px solid scale-lightness($primary-color-dark, -10%);
-  // @include bs-med;
-  // position: absolute;
-  width: 100%;
-  float: right;
-  // text-align: right;
+  color: $primary-color-text;
   li {
-    background-color: $primary-color-dark;
-    color: $primary-color-text;
     border-radius: 0.313em;
     display: inline;
     float: right;
@@ -206,8 +199,8 @@ footer {
   width: 100%;
 }
 
-@media (max-width: 420px) {
-  #stickynav {
+@media (max-width: 30em) {
+  .stickynav {
       display: none;
   }
 }
