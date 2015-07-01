@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   /*background-color: #4CAF50;*/
   background-color: #ffffff;
@@ -11,32 +5,35 @@ body {
   color: #212121;
 }
 
-.wrapper {
-  display: table;
-  height: 100%;
-  text-align: left;
-  width: 100%;
-}
+// .wrapper {
+//   display: table;
+//   height: 100%;
+//   text-align: left;
+//   width: 100%;
+// }
 
 header {
   background-image: url("../images/smts-top.png");
   /*background-repeat:no-repeat;
   background-position:top left;
   background-size:100% 80px;*/
-  display: table-row;
+  // display: table-row;
   height: 1px;
 }
 
 main {
-  display: table;
+  // display: table;
   height: 100%;
   /*margin: 20px 0 20px 0;*/
   width: 100%;
 }
 
-.box {
-  display: table-cell;
+.bit-20 {
+  width: 20%;
 }
+// .box {
+//   display: table-cell;
+// }
 
 .content {
   width: 50%;
@@ -104,7 +101,7 @@ main {
 footer {
   background-color: #388e3c;
   box-shadow: 0 3px 5px rgba(0,0,0,0.2);
-  display: table-row;
+  // display: table-row;
   height: 1px;
 }
 

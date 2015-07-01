@@ -1,9 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* line 1, ../sass/smts.scss */
 body {
   /*background-color: #4CAF50;*/
   background-color: #ffffff;
@@ -11,47 +6,44 @@ body {
   color: #212121;
 }
 
-.wrapper {
-  display: table;
-  height: 100%;
-  text-align: left;
-  width: 100%;
-}
-
+/* line 15, ../sass/smts.scss */
 header {
   background-image: url("../images/smts-top.png");
   /*background-repeat:no-repeat;
   background-position:top left;
   background-size:100% 80px;*/
-  display: table-row;
   height: 1px;
 }
 
+/* line 24, ../sass/smts.scss */
 main {
-  display: table;
   height: 100%;
   /*margin: 20px 0 20px 0;*/
   width: 100%;
 }
 
-.box {
-  display: table-cell;
+/* line 31, ../sass/smts.scss */
+.bit-20 {
+  width: 20%;
 }
 
+/* line 38, ../sass/smts.scss */
 .content {
   width: 50%;
   /*margin: 3em 1em;*/
 }
 
+/* line 43, ../sass/smts.scss */
 .content h1, .content h2, .content h3, .content h4 {
   margin: 0.5em;
   text-align: center;
 }
 
+/* line 48, ../sass/smts.scss */
 .card {
   background: #ffffff;
   border: 1px solid #b6b6b6;
-  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.2);
   margin: 2em 0.5em 3em 0.5em;
   /*padding: 5px;*/
 }
@@ -63,9 +55,8 @@ main {
 .card h4 {
    margin: 10px auto 15px auto;
 }*/
-
+/* line 64, ../sass/smts.scss */
 .content .card {
-
   /*margin: 15px, auto;*/
   /*padding: 0 15px;*/
   display: inline-block;
@@ -73,44 +64,51 @@ main {
   vertical-align: top;
 }
 
+/* line 73, ../sass/smts.scss */
 .card-content {
   padding: 1em;
 }
 
+/* line 77, ../sass/smts.scss */
 .card-content h1, .card-content h2, .card-content h3, .card-content h4 {
   margin: 0.5em;
   text-align: center;
 }
 
+/* line 82, ../sass/smts.scss */
 .card-content p {
   margin: 1em;
 }
 
+/* line 86, ../sass/smts.scss */
 .card-content i {
   color: #212121;
   display: block;
   text-align: center;
 }
 
+/* line 92, ../sass/smts.scss */
 .sidebar {
   /*margin: 10px;*/
   width: 20%;
 }
 
+/* line 97, ../sass/smts.scss */
 .sidebar .card {
   width: 95%;
 }
 
+/* line 101, ../sass/smts.scss */
 footer {
   background-color: #388e3c;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
-  display: table-row;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   height: 1px;
 }
 
+/* line 108, ../sass/smts.scss */
 #contact-form {
   background-color: #C8E6C9;
-  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.2);
   height: 35%;
   width: 90%;
   margin: 0 auto;
@@ -118,11 +116,13 @@ footer {
   padding-bottom: 10px;
 }
 
+/* line 118, ../sass/smts.scss */
 #contact-form h3 {
   text-align: center;
   padding-top: 9px;
 }
 
+/* line 123, ../sass/smts.scss */
 #contact-form input, label, textarea {
   box-shadow: none;
   display: block;
@@ -131,32 +131,36 @@ footer {
   width: 80%;
 }
 
+/* line 131, ../sass/smts.scss */
 #contact-form input, textarea {
   border: 1px solid #b6b6b6;
   margin-top: -5px;
 }
 
+/* line 136, ../sass/smts.scss */
 #contact-form button {
   background-color: #2196f3;
   border: none;
   border-radius: 1px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   display: block;
   min-height: 30px;
   margin: 10px auto 10px auto;
   min-width: 65%;
 }
 
+/* line 147, ../sass/smts.scss */
 .header-btn {
   text-align: right;
 }
 
+/* line 151, ../sass/smts.scss */
 .header-btn button {
   font-size: 1.5em;
   background-color: #2196f3;
   border: none;
   border-radius: 1px;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   display: inline;
   min-height: 5em;
   margin: -11em 3em 0 0;
@@ -164,32 +168,36 @@ footer {
   padding: 1em;
 }
 
+/* line 164, ../sass/smts.scss */
 #header-img {
-    background-color: #b6b6b6;
-    height: 14.5em;
-    /*position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;*/
+  background-color: #b6b6b6;
+  height: 14.5em;
+  /*position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;*/
 }
 
+/* line 174, ../sass/smts.scss */
 #header-img img {
   width: 100%;
   height: 15em;
   position: absolute;
 }
 
+/* line 180, ../sass/smts.scss */
 #stickynav {
   background-color: #388E3C;
   border-bottom: 1px solid #328036;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   min-height: 3.25em;
   /*margin-top: -20px;*/
   width: 100%;
   z-index: 1;
 }
 
+/* line 190, ../sass/smts.scss */
 #stickynav li {
   background-color: #388E3C;
   color: #ffffff;
@@ -201,17 +209,20 @@ footer {
   padding: 12px 10px 13px 10px;
 }
 
-#stickynav li:hover{
+/* line 201, ../sass/smts.scss */
+#stickynav li:hover {
   background-color: #4CAF50;
 }
 
 @media (max-width: 420px) {
+  /* line 206, ../sass/smts.scss */
   .box {
     display: block;
     width: 100%;
   }
+
+  /* line 210, ../sass/smts.scss */
   #stickynav {
-      display: none;
+    display: none;
   }
 }
-
