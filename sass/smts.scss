@@ -53,6 +53,41 @@ h3 {
   font-size: $base-font-size * 1.5;
 }
 
+.brand {
+  padding: 0.75em;
+  a {
+    color: $primary-color-text;
+    text-decoration: none;
+  }
+}
+
+#stickynav {
+  background-color: $primary-color-dark;
+  border-bottom: 1px solid scale-lightness($primary-color-dark, -10%);
+  @include bs-med;
+  position: fixed;
+  width: 100%;
+}
+
+#stickynav li {
+  background-color: $primary-color-dark;
+  color: $primary-color-text;
+  border-radius: 0.313em;
+  display: inline;
+  float: right;
+  margin-left: 2em;
+  min-width: 5em;
+  padding: 12px 10px;
+  text-align: center;
+  @include single-transition(background-color, 0.3s, ease-out);
+}
+
+#stickynav li:hover{
+  background-color: $primary-color;
+  @include single-transition(background-color, 0.3s, ease-in);
+}
+
+
 .content {
 
 }
@@ -164,32 +199,6 @@ footer {
 
 #header-img img {
   width: 100%;
-}
-
-#stickynav {
-  background-color: $primary-color-dark;
-  border-bottom: 1px solid scale-lightness($primary-color-dark, -10%);
-  @include bs-med;
-  position: fixed;
-  width: 100%;
-}
-
-#stickynav li {
-  background-color: $primary-color-dark;
-  color: $primary-color-text;
-  border-radius: 0.313em;
-  display: inline;
-  float: right;
-  margin-left: 2em;
-  min-width: 5em;
-  padding: 12px 10px;
-  text-align: center;
-  @include single-transition(background-color, 0.3s, ease-out);
-}
-
-#stickynav li:hover{
-  background-color: $primary-color;
-  @include single-transition(background-color, 0.3s, ease-in);
 }
 
 @media (max-width: 420px) {
