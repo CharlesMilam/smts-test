@@ -49,18 +49,19 @@ h3 {
 }
 
 /* line 64, ../sass/smts.scss */
-#stickynav {
+.stickynav {
   background-color: #388E3C;
-  border-bottom: 1px solid #328036;
-  -moz-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  width: 100%;
+  max-width: 100%;
 }
 
-/* line 72, ../sass/smts.scss */
-#stickynav li {
+/* line 70, ../sass/smts.scss */
+.navbar-menu {
+  background-color: #388E3C;
+  width: 100%;
+  float: right;
+}
+/* line 78, ../sass/smts.scss */
+.navbar-menu li {
   background-color: #388E3C;
   color: #FFFFFF;
   border-radius: 0.313em;
@@ -68,16 +69,15 @@ h3 {
   float: right;
   margin-left: 2em;
   min-width: 5em;
-  padding: 12px 10px;
+  padding: 0.75em 0.625em;
   text-align: center;
   -moz-transition: background-color 0.3s ease-out;
   -o-transition: background-color 0.3s ease-out;
   -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
 }
-
-/* line 85, ../sass/smts.scss */
-#stickynav li:hover {
+/* line 89, ../sass/smts.scss */
+.navbar-menu li:hover {
   background-color: #4CAF50;
   -moz-transition: background-color 0.3s ease-in;
   -o-transition: background-color 0.3s ease-in;
@@ -85,12 +85,12 @@ h3 {
   transition: background-color 0.3s ease-in;
 }
 
-/* line 95, ../sass/smts.scss */
+/* line 100, ../sass/smts.scss */
 .content h1, .content h2, .content h3, .content h4 {
   text-align: center;
 }
 
-/* line 99, ../sass/smts.scss */
+/* line 104, ../sass/smts.scss */
 .card {
   background: #FFFFFF;
   border: 1px solid #B6B6B6;
@@ -99,37 +99,37 @@ h3 {
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* line 109, ../sass/smts.scss */
+/* line 114, ../sass/smts.scss */
 .card-content {
   padding: 1em;
 }
 
-/* line 113, ../sass/smts.scss */
+/* line 118, ../sass/smts.scss */
 .card-content h1, .card-content h2, .card-content h3, .card-content h4 {
   margin: 0.5em;
   text-align: center;
 }
 
-/* line 118, ../sass/smts.scss */
+/* line 123, ../sass/smts.scss */
 .card-content p {
   margin: 0.5em;
 }
 
-/* line 122, ../sass/smts.scss */
+/* line 127, ../sass/smts.scss */
 .card-content i {
   color: #212121;
   display: block;
   text-align: center;
 }
 
-/* line 136, ../sass/smts.scss */
+/* line 141, ../sass/smts.scss */
 footer {
   background-color: #388e3c;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   height: 1px;
 }
 
-/* line 142, ../sass/smts.scss */
+/* line 147, ../sass/smts.scss */
 #contact-form {
   background-color: #C8E6C9;
   border: 1px solid #b9dfba;
@@ -140,13 +140,13 @@ footer {
   padding-bottom: 10px;
 }
 
-/* line 150, ../sass/smts.scss */
+/* line 155, ../sass/smts.scss */
 #contact-form h3 {
   text-align: center;
   padding-top: 9px;
 }
 
-/* line 155, ../sass/smts.scss */
+/* line 160, ../sass/smts.scss */
 #contact-form input, label, textarea {
   box-shadow: none;
   display: block;
@@ -155,13 +155,13 @@ footer {
   width: 80%;
 }
 
-/* line 163, ../sass/smts.scss */
+/* line 168, ../sass/smts.scss */
 #contact-form input, textarea {
   border: 1px solid #b6b6b6;
   margin-top: -5px;
 }
 
-/* line 168, ../sass/smts.scss */
+/* line 173, ../sass/smts.scss */
 #contact-form button {
   background-color: #2196f3;
   border: none;
@@ -175,12 +175,12 @@ footer {
   min-width: 65%;
 }
 
-/* line 179, ../sass/smts.scss */
+/* line 184, ../sass/smts.scss */
 .header-btn {
   text-align: right;
 }
 
-/* line 183, ../sass/smts.scss */
+/* line 188, ../sass/smts.scss */
 .header-btn button {
   font-size: 1.5em;
   background-color: #2196f3;
@@ -194,18 +194,18 @@ footer {
   padding: 1em;
 }
 
-/* line 196, ../sass/smts.scss */
+/* line 201, ../sass/smts.scss */
 #header-img {
   background-color: #b6b6b6;
 }
 
-/* line 200, ../sass/smts.scss */
+/* line 205, ../sass/smts.scss */
 #header-img img {
   width: 100%;
 }
 
 @media (max-width: 420px) {
-  /* line 205, ../sass/smts.scss */
+  /* line 210, ../sass/smts.scss */
   #stickynav {
     display: none;
   }
