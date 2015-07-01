@@ -167,25 +167,25 @@ footer {
 }
 
 #stickynav {
-  background-color: #388E3C;
-  border-bottom: 1px solid #328036;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  background-color: $primary-color-dark;
+  border-bottom: 1px solid scale-lightness($primary-color-dark, -10%);
+  // box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  @include bs-med;
   position: fixed;
   width: 100%;
-  z-index: 1;
 }
 
 #stickynav li {
-  background-color: #388E3C;
-  color: #ffffff;
+  background-color: $primary-color-dark;
+  color: $primary-color-text;
   display: inline;
-  float: left;
+  float: right;
   margin-left: 3rem;
   padding: 12px 10px;
 }
 
 #stickynav li:hover{
-  background-color: #4CAF50;
+  background-color: $primary-color;
 }
 
 @media (max-width: 420px) {

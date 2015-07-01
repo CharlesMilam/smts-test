@@ -19,7 +19,7 @@ header {
   box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
   background-color: #388E3C;
   background-size: 100%;
-  background-image: url('../images/smts-top.png?1434687805');
+  background-image: url('../images/smts-top.png?1435744236');
   height: 30em;
 }
 
@@ -161,18 +161,19 @@ footer {
 #stickynav {
   background-color: #388E3C;
   border-bottom: 1px solid #328036;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
   position: fixed;
   width: 100%;
-  z-index: 1;
 }
 
 /* line 178, ../sass/smts.scss */
 #stickynav li {
   background-color: #388E3C;
-  color: #ffffff;
+  color: #FFFFFF;
   display: inline;
-  float: left;
+  float: right;
   margin-left: 3rem;
   padding: 12px 10px;
 }
