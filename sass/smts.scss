@@ -1,10 +1,17 @@
 @import "compass";
+@import "compass/css3/box-shadow";
 @import "palette";
 
 $base-font: "Roboto", "Helvetica", "Arial", sans-serif;
 $base-font-size: 16px;
 $base-line-height: 24px;
 @include establish-baseline;
+
+@mixin bs-large {
+    -moz-box-shadow: 0px 5px 0 12px 15px 0 rgba(0, 0, 0, 0.2) 0;
+    -webkit-box-shadow: 0px 5px 0 12px 15px 0 rgba(0, 0, 0, 0.2) 0;
+    box-shadow: 0px 5px 0 12px 15px 0 rgba(0, 0, 0, 0.2);
+}
 
 body {
   /*background-color: #4CAF50;*/
@@ -21,17 +28,25 @@ body {
 // }
 
 header {
+  @include bs-large;
+  // background-color: $primary-color-dark;
+  // background-image: url("../images/smts-top.png");
+  background-size: 100%;
   background-image: image-url("smts-top.png");
+  // background-image: url("../images/smts-top.png");
   /*background-repeat:no-repeat;
   background-position:top left;
   background-size:100% 80px;*/
   // display: table-row;
-  height: 1px;
+  height: 30em; //image-height("smts-top.png");
+
+  // @include box-shadow(0 12px 15px 0 rgba(0,0,0,0.2) 0);
+  // box-shadow: 0 12px 15px 0 rgba(0,0,0,0.2);
 }
 
 main {
   // display: table;
-  height: 100%;
+  // height: 100%;
   /*margin: 20px 0 20px 0;*/
   // width: 100%;
 }
@@ -59,7 +74,8 @@ h3 {
 
 .card {
   background: $primary-color-text;
-  border: 1px solid #b6b6b6;
+  border: 1px solid $divider-color;
+  // @include bs-large;
   box-shadow: 0 12px 15px 0 rgba(0,0,0,0.2);
   // margin: 2em 0.5em 3em 0.5em;
   /*padding: 5px;*/
@@ -81,7 +97,7 @@ h3 {
 }
 
 .card-content p {
-  margin: 1em;
+  margin: 0.5em;
 }
 
 .card-content i {
@@ -185,6 +201,7 @@ footer {
   box-shadow: 0 3px 5px rgba(0,0,0,0.2);
   // min-height: 3.25em;
   /*margin-top: -20px;*/
+  position: fixed;
   width: 100%;
   z-index: 1;
 }
