@@ -53,6 +53,39 @@ h3 {
   font-size: $base-font-size * 1.5;
 }
 
+.brand {
+  padding: 0.75em;
+  a {
+    color: $primary-color-text;
+    text-decoration: none;
+  }
+}
+
+.stickynav {
+  background-color: $primary-color-dark;
+  min-width: 100%;
+  position: fixed;
+}
+
+.navbar-menu {
+  background-color: $primary-color-dark;
+  color: $primary-color-text;
+  li {
+    border-radius: 0.313em;
+    display: inline;
+    float: right;
+    margin-left: 2em;
+    min-width: 5em;
+    padding: 0.75em 0.625em;
+    text-align: center;
+    @include single-transition(background-color, 0.3s, ease-out);
+    &:hover{
+      background-color: $primary-color;
+      @include single-transition(background-color, 0.3s, ease-in);
+    }
+  }
+}
+
 .content {
 
 }
@@ -166,30 +199,8 @@ footer {
   width: 100%;
 }
 
-#stickynav {
-  background-color: #388E3C;
-  border-bottom: 1px solid #328036;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-
-#stickynav li {
-  background-color: #388E3C;
-  color: #ffffff;
-  display: inline;
-  float: left;
-  margin-left: 3rem;
-  padding: 12px 10px;
-}
-
-#stickynav li:hover{
-  background-color: #4CAF50;
-}
-
-@media (max-width: 420px) {
-  #stickynav {
+@media (max-width: 30em) {
+  .stickynav {
       display: none;
   }
 }

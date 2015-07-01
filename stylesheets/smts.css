@@ -19,7 +19,7 @@ header {
   box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
   background-color: #388E3C;
   background-size: 100%;
-  background-image: url('../images/smts-top.png?1434687805');
+  background-image: url('../images/smts-top.png?1435744236');
   height: 30em;
 }
 
@@ -38,12 +38,57 @@ h3 {
   font-size: 24px;
 }
 
-/* line 60, ../sass/smts.scss */
+/* line 56, ../sass/smts.scss */
+.brand {
+  padding: 0.75em;
+}
+/* line 58, ../sass/smts.scss */
+.brand a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* line 64, ../sass/smts.scss */
+.stickynav {
+  background-color: #388E3C;
+  min-width: 100%;
+  position: fixed;
+}
+
+/* line 70, ../sass/smts.scss */
+.navbar-menu {
+  background-color: #388E3C;
+  color: #FFFFFF;
+}
+/* line 73, ../sass/smts.scss */
+.navbar-menu li {
+  border-radius: 0.313em;
+  display: inline;
+  float: right;
+  margin-left: 2em;
+  min-width: 5em;
+  padding: 0.75em 0.625em;
+  text-align: center;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+/* line 82, ../sass/smts.scss */
+.navbar-menu li:hover {
+  background-color: #4CAF50;
+  -moz-transition: background-color 0.3s ease-in;
+  -o-transition: background-color 0.3s ease-in;
+  -webkit-transition: background-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
+}
+
+/* line 93, ../sass/smts.scss */
 .content h1, .content h2, .content h3, .content h4 {
   text-align: center;
 }
 
-/* line 64, ../sass/smts.scss */
+/* line 97, ../sass/smts.scss */
 .card {
   background: #FFFFFF;
   border: 1px solid #B6B6B6;
@@ -52,37 +97,37 @@ h3 {
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* line 74, ../sass/smts.scss */
+/* line 107, ../sass/smts.scss */
 .card-content {
   padding: 1em;
 }
 
-/* line 78, ../sass/smts.scss */
+/* line 111, ../sass/smts.scss */
 .card-content h1, .card-content h2, .card-content h3, .card-content h4 {
   margin: 0.5em;
   text-align: center;
 }
 
-/* line 83, ../sass/smts.scss */
+/* line 116, ../sass/smts.scss */
 .card-content p {
   margin: 0.5em;
 }
 
-/* line 87, ../sass/smts.scss */
+/* line 120, ../sass/smts.scss */
 .card-content i {
   color: #212121;
   display: block;
   text-align: center;
 }
 
-/* line 101, ../sass/smts.scss */
+/* line 134, ../sass/smts.scss */
 footer {
   background-color: #388e3c;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   height: 1px;
 }
 
-/* line 107, ../sass/smts.scss */
+/* line 140, ../sass/smts.scss */
 #contact-form {
   background-color: #C8E6C9;
   border: 1px solid #b9dfba;
@@ -93,13 +138,13 @@ footer {
   padding-bottom: 10px;
 }
 
-/* line 115, ../sass/smts.scss */
+/* line 148, ../sass/smts.scss */
 #contact-form h3 {
   text-align: center;
   padding-top: 9px;
 }
 
-/* line 120, ../sass/smts.scss */
+/* line 153, ../sass/smts.scss */
 #contact-form input, label, textarea {
   box-shadow: none;
   display: block;
@@ -108,13 +153,13 @@ footer {
   width: 80%;
 }
 
-/* line 128, ../sass/smts.scss */
+/* line 161, ../sass/smts.scss */
 #contact-form input, textarea {
   border: 1px solid #b6b6b6;
   margin-top: -5px;
 }
 
-/* line 133, ../sass/smts.scss */
+/* line 166, ../sass/smts.scss */
 #contact-form button {
   background-color: #2196f3;
   border: none;
@@ -128,12 +173,12 @@ footer {
   min-width: 65%;
 }
 
-/* line 144, ../sass/smts.scss */
+/* line 177, ../sass/smts.scss */
 .header-btn {
   text-align: right;
 }
 
-/* line 148, ../sass/smts.scss */
+/* line 181, ../sass/smts.scss */
 .header-btn button {
   font-size: 1.5em;
   background-color: #2196f3;
@@ -147,44 +192,19 @@ footer {
   padding: 1em;
 }
 
-/* line 161, ../sass/smts.scss */
+/* line 194, ../sass/smts.scss */
 #header-img {
   background-color: #b6b6b6;
 }
 
-/* line 165, ../sass/smts.scss */
+/* line 198, ../sass/smts.scss */
 #header-img img {
   width: 100%;
 }
 
-/* line 169, ../sass/smts.scss */
-#stickynav {
-  background-color: #388E3C;
-  border-bottom: 1px solid #328036;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-
-/* line 178, ../sass/smts.scss */
-#stickynav li {
-  background-color: #388E3C;
-  color: #ffffff;
-  display: inline;
-  float: left;
-  margin-left: 3rem;
-  padding: 12px 10px;
-}
-
-/* line 187, ../sass/smts.scss */
-#stickynav li:hover {
-  background-color: #4CAF50;
-}
-
-@media (max-width: 420px) {
-  /* line 192, ../sass/smts.scss */
-  #stickynav {
+@media (max-width: 30em) {
+  /* line 203, ../sass/smts.scss */
+  .stickynav {
     display: none;
   }
 }
