@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: #4CAF50;
+  /*background-color: #4CAF50;*/
+  background-color: #ffffff;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   color: #212121;
 }
@@ -18,7 +19,10 @@ body {
 }
 
 header {
-  /*background-image: url("../images/smts-header.jpg");*/
+  background-image: url("../images/smts-top.png");
+  /*background-repeat:no-repeat;
+  background-position:top left;
+  background-size:100% 80px;*/
   display: table-row;
   height: 1px;
 }
@@ -36,49 +40,62 @@ main {
 
 .content {
   width: 50%;
-  margin: 3em 1em;
+  /*margin: 3em 1em;*/
+}
+
+.content h1, .content h2, .content h3, .content h4 {
+  margin: 0.5em;
+  text-align: center;
 }
 
 .card {
   background: #ffffff;
   border: 1px solid #b6b6b6;
   box-shadow: 0 12px 15px 0 rgba(0,0,0,0.2);
-  margin: 2em 0 3em 0;
+  margin: 2em 0.5em 3em 0.5em;
   /*padding: 5px;*/
 }
 
-.card h2 {
+/*.card h2 {
    margin: 3px auto 15px auto;
 }
 
 .card h4 {
    margin: 10px auto 15px auto;
-}
+}*/
 
 .content .card {
 
   /*margin: 15px, auto;*/
   /*padding: 0 15px;*/
-  width: 95%;
+  display: inline-block;
+  max-width: 30%;
+  vertical-align: top;
 }
 
 .card-content {
   padding: 1em;
 }
 
-.card-content h1, h2, h3, h4 {
-  margin: 1em;
+.card-content h1, .card-content h2, .card-content h3, .card-content h4 {
+  margin: 0.5em;
+  text-align: center;
 }
 
 .card-content p {
   margin: 1em;
 }
 
+.card-content i {
+  color: #212121;
+  display: block;
+  text-align: center;
+}
+
 .sidebar {
   /*margin: 10px;*/
   width: 20%;
 }
-
 
 .sidebar .card {
   width: 95%;
@@ -130,22 +147,49 @@ footer {
   min-width: 65%;
 }
 
+.header-btn {
+  text-align: right;
+}
+
+.header-btn button {
+  font-size: 1.5em;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 1px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+  display: inline;
+  min-height: 5em;
+  margin: -11em 3em 0 0;
+  min-width: 25%;
+  padding: 1em;
+}
+
 #header-img {
     background-color: #b6b6b6;
-    height: 20em;
+    height: 14.5em;
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;*/
 }
 
 #header-img img {
   width: 100%;
+  height: 15em;
+  position: absolute;
 }
 
 #stickynav {
   background-color: #388E3C;
+  border-bottom: 1px solid #328036;
   box-shadow: 0 3px 5px rgba(0,0,0,0.2);
-  height: 3.25em;
+  min-height: 3.25em;
   /*margin-top: -20px;*/
   width: 100%;
+  z-index: 1;
 }
+
 #stickynav li {
   background-color: #388E3C;
   color: #ffffff;
