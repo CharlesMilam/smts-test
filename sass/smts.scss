@@ -16,7 +16,7 @@ body {
 // }
 
 header {
-  background-image: url("../images/smts-top.png");
+  background-image: image-url("smts-top.png");
   /*background-repeat:no-repeat;
   background-position:top left;
   background-size:100% 80px;*/
@@ -28,18 +28,15 @@ main {
   // display: table;
   height: 100%;
   /*margin: 20px 0 20px 0;*/
-  width: 100%;
+  // width: 100%;
 }
 
 .bit-20 {
   width: 20%;
 }
-// .box {
-//   display: table-cell;
-// }
 
 .content {
-  width: 50%;
+  // width: 50%;
   /*margin: 3em 1em;*/
 }
 
@@ -56,21 +53,10 @@ main {
   /*padding: 5px;*/
 }
 
-/*.card h2 {
-   margin: 3px auto 15px auto;
-}
-
-.card h4 {
-   margin: 10px auto 15px auto;
-}*/
-
 .content .card {
-
-  /*margin: 15px, auto;*/
-  /*padding: 0 15px;*/
-  display: inline-block;
-  max-width: 30%;
-  vertical-align: top;
+  // display: inline-block;
+  // max-width: 30%;
+  // vertical-align: top;
 }
 
 .card-content {
@@ -94,11 +80,11 @@ main {
 
 .sidebar {
   /*margin: 10px;*/
-  width: 20%;
+  // width: 20%;
 }
 
 .sidebar .card {
-  width: 95%;
+  // width: 95%;
 }
 
 footer {
@@ -166,7 +152,7 @@ footer {
 
 #header-img {
     background-color: #b6b6b6;
-    height: 14.5em;
+    // height: 14.5em;
     /*position: fixed;
     top: 0;
     left: 0;
@@ -176,15 +162,15 @@ footer {
 
 #header-img img {
   width: 100%;
-  height: 15em;
-  position: absolute;
+  // height: 15em;
+  // position: absolute;
 }
 
 #stickynav {
   background-color: #388E3C;
   border-bottom: 1px solid #328036;
   box-shadow: 0 3px 5px rgba(0,0,0,0.2);
-  min-height: 3.25em;
+  // min-height: 3.25em;
   /*margin-top: -20px;*/
   width: 100%;
   z-index: 1;
@@ -195,10 +181,10 @@ footer {
   color: #ffffff;
   display: inline;
   float: left;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.2rem;
+  // font-family: Helvetica, Arial, sans-serif;
+  // font-size: 1.2rem;
   margin-left: 3rem;
-  padding: 12px 10px 13px 10px;
+  padding: 12px 10px;
 }
 
 #stickynav li:hover{
