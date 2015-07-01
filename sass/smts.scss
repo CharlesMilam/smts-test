@@ -169,7 +169,6 @@ footer {
 #stickynav {
   background-color: $primary-color-dark;
   border-bottom: 1px solid scale-lightness($primary-color-dark, -10%);
-  // box-shadow: 0 3px 5px rgba(0,0,0,0.2);
   @include bs-med;
   position: fixed;
   width: 100%;
@@ -181,8 +180,10 @@ footer {
   border-radius: 0.313em;
   display: inline;
   float: right;
-  margin-left: 3rem;
+  margin-left: 2em;
+  min-width: 5em;
   padding: 12px 10px;
+  text-align: center;
   @include single-transition(background-color, 0.3s, ease-out);
 }
 
