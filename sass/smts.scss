@@ -61,21 +61,18 @@ h3 {
   a {
     color: $primary-color-text;
     text-decoration: none;
-    &:before {
-      background-color: $primary-color-text;
+    display: inline-block;
+    &:after {
+      background: transparent;  // transition effect from http://bradsknutson.com/blog/css-sliding-underline/
       content: "";
-      position: absolute;
-      width: 15%;
-      height: 2px;
-      bottom: 21px;
-      left: 10px;
-      visibility: hidden;
-      transform: scaleX(0);
-      transition: all 0.3s ease-in-out 0s;
+      display: block;
+      width: 0;
+      height: 1px;
+      transition: width 0.3s ease-in, background-color  0.3s ease-in;
     }
-    &:hover:before {
-      visibility: visible;
-      transform: scaleX(1);
+    &:hover:after {
+      width: 100%;
+      background: $primary-color-text;
     }
   }
 }
