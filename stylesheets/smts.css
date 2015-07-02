@@ -24,6 +24,11 @@ header {
   z-index: 999;
 }
 
+/* line 44, ../sass/smts.scss */
+main {
+  margin: 1.5em 0;
+}
+
 /* line 48, ../sass/smts.scss */
 .bit-20 {
   width: 20%;
