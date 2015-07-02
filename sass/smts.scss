@@ -135,6 +135,10 @@ h3 {
 
 }
 
+.form-container {
+
+}
+
 footer {
   background-color: #388e3c;
   height: 1px;
@@ -145,12 +149,13 @@ footer {
   border: 1px solid scale-lightness($primary-color-light, -5%);
   @include box-shadow-large;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding: 0.5em;
+  // padding-bottom: 10px;
 }
 
 #contact-form h3 {
   text-align: center;
-  padding-top: 9px;
+  // padding-top: 9px;
 }
 
 #contact-form input, label, textarea {
