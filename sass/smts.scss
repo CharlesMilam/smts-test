@@ -79,23 +79,6 @@ h3 {
 .brand {
   padding: 0.75em;
   @include branding-link;
-  // a {
-  //   color: $primary-color-text;
-  //   text-decoration: none;
-  //   display: inline-block;
-  //   &:after {
-  //     background: transparent;  // transition effect from http://bradsknutson.com/blog/css-sliding-underline/
-  //     content: "";
-  //     display: block;
-  //     width: 0;
-  //     height: 1px;
-  //     transition: width 0.3s ease-in, background-color  0.3s ease-in;
-  //   }
-  //   &:hover:after {
-  //     width: 100%;
-  //     background: $primary-color-text;
-  //   }
-  // }
 }
 
 .stickynav {
@@ -260,8 +243,9 @@ footer {
 // small
 @media (max-width: 30em) {
   header {
-    height: image-height("../images/#{$header-img}") / 3;
-    background-repeat: no-repeat;
+    background-image: none;
+    background: $primary-color-dark;
+    height: 3em;
     @include box-shadow-small;
   }
   .bit-20 {
@@ -303,9 +287,11 @@ footer {
 // medium
 @media (min-width: 30em) and (max-width: 50em) {
   header {
-    height: image-height("../images/#{$header-img}") / 2;
-    background-repeat: no-repeat;
-    @include box-shadow-small;
+    background-image: none;
+    background: $primary-color-dark;
+    height: 3em;
+    // background-repeat: no-repeat;
+    @include box-shadow;
   }
   .bit-20 {
     width: 100%;
@@ -317,10 +303,7 @@ footer {
     width: 100% !important;
   }
   .bit-75 {
-    width: 100%;
-  }
-  .stickynav {
-      display: none;
+    width: 100% !important;
   }
   .card {
     @include box-shadow-med;
@@ -328,28 +311,50 @@ footer {
   #contact-form {
     @include box-shadow-med;
   }
+  .show-menu {
+    display: block;
+    float: left;
+  }
+  .stickynav .bit-25 {
+    display: none;
+  }
+  .navbar-menu {
+    ul {
+      position: static;
+      display: none;
+    }
+    li {
+      margin-bottom: 1px;
+      width: 100%;
+    }
+  }
 }
 // large
-@media (min-width: 50em) and (max-width: 70em) {
+@media (min-width: 51em) and (max-width: 70em) {
   header {
     height: image-height("../images/#{$header-img}") / 1.125;
     background-repeat: no-repeat;
     @include box-shadow-med;
   }
-  .bit-20 {
-    width: 100%;
-  }
-  .bit-25 {
-    width: 100%;
-  }
+  // .bit-20 {
+  //   width: 40%;
+  // }
+  // .bit-25 {
+  //   width: 100%;
+  // }
   .bit-60 {
-    width: 100% !important;
+    width: 80% !important;
   }
-  .bit-75 {
-    width: 100%;
+  // .bit-75 {
+  //   width: 80% !important;
+  // }
+  .brand {
+    font-size: 0.65em;
+    text-transform: uppercase;
   }
-  .stickynav {
-      display: none;
+  .navbar-menu {
+    font-size: 0.65em;
+    text-transform: uppercase;
   }
   .card {
     @include box-shadow-med;
