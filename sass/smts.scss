@@ -111,15 +111,16 @@ h3 {
   }
 }
 
-input [type=checkbox] {
-  display: none;
+// input[type=checkbox]#show-menu {
+//   display: none;
+// }
+input[type=checkbox]:checked  ~ nav ul {
+  display: block;
 }
 .show-menu {
   display: none;
 }
-input[type=checkbox]:checked  #navbar-menu {
-  display: block;
-}
+
 .content {
 
 }
@@ -266,8 +267,16 @@ footer {
   .brand {
     display: none;
   }
-  .navbar-menu li {
-    width: 100%;
+  .navbar-menu {
+
+    ul {
+      position: static;
+      display: none;
+    }
+    li {
+      margin-bottom: 1px;
+      width: 100%;
+    }
   }
   #contact-form {
     @include box-shadow-med;
