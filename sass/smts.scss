@@ -26,6 +26,26 @@ $header-img: "smts-top.png";
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
+@mixin branding-link {
+    a {
+    color: $primary-color-text;
+    text-decoration: none;
+    display: inline-block;
+    &:after {
+      background: transparent;  // transition effect from http://bradsknutson.com/blog/css-sliding-underline/
+      content: "";
+      display: block;
+      width: 0;
+      height: 1px;
+      transition: width 0.3s ease-in, background-color  0.3s ease-in;
+    }
+    &:hover:after {
+      width: 100%;
+      background: $primary-color-text;
+    }
+  }
+}
+
 body {
   background-color: $primary-color-text;
   font-family: $base-font;
@@ -58,23 +78,24 @@ h3 {
 
 .brand {
   padding: 0.75em;
-  a {
-    color: $primary-color-text;
-    text-decoration: none;
-    display: inline-block;
-    &:after {
-      background: transparent;  // transition effect from http://bradsknutson.com/blog/css-sliding-underline/
-      content: "";
-      display: block;
-      width: 0;
-      height: 1px;
-      transition: width 0.3s ease-in, background-color  0.3s ease-in;
-    }
-    &:hover:after {
-      width: 100%;
-      background: $primary-color-text;
-    }
-  }
+  @include branding-link;
+  // a {
+  //   color: $primary-color-text;
+  //   text-decoration: none;
+  //   display: inline-block;
+  //   &:after {
+  //     background: transparent;  // transition effect from http://bradsknutson.com/blog/css-sliding-underline/
+  //     content: "";
+  //     display: block;
+  //     width: 0;
+  //     height: 1px;
+  //     transition: width 0.3s ease-in, background-color  0.3s ease-in;
+  //   }
+  //   &:hover:after {
+  //     width: 100%;
+  //     background: $primary-color-text;
+  //   }
+  // }
 }
 
 .stickynav {
@@ -110,7 +131,7 @@ h3 {
     }
   }
 }
-
+// hidden label and checkbox for displaying menu for small/medium media
 input[type=checkbox]#show-menu {
   display: none;
 }
@@ -119,6 +140,7 @@ input[type=checkbox]:checked  ~ nav ul {
 }
 .show-menu {
   display: none;
+  @include branding-link;
 }
 
 .content {
@@ -252,11 +274,8 @@ footer {
     width: 100% !important;
   }
   .bit-75 {
-    width: 100%;
+    width: 100% !important;
   }
-  // .stickynav {
-  //     display: none;
-  // }
   .card {
     @include box-shadow-med;
   }
@@ -270,10 +289,6 @@ footer {
   .stickynav .bit-25 {
     display: none;
   }
-  // .brand {
-  //   visibility: hidden;
-  //   // display: none;
-  // }
   .navbar-menu {
     ul {
       position: static;
