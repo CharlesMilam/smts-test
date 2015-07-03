@@ -113,6 +113,11 @@ h3 {
   transition: background-color 0.3s ease-in;
 }
 
+/* line 114, ../sass/smts.scss */
+input[type=checkbox]#show-menu {
+  display: none;
+}
+
 /* line 117, ../sass/smts.scss */
 input[type=checkbox]:checked ~ nav ul {
   display: block;
@@ -278,36 +283,36 @@ footer {
   }
 
   /* line 263, ../sass/smts.scss */
-  .show-menu {
-    display: block;
-    float: left;
-  }
-
-  /* line 267, ../sass/smts.scss */
-  .brand {
-    display: none;
-  }
-
-  /* line 272, ../sass/smts.scss */
-  .navbar-menu ul {
-    position: static;
-    display: none;
-  }
-  /* line 276, ../sass/smts.scss */
-  .navbar-menu li {
-    margin-bottom: 1px;
-    width: 100%;
-  }
-
-  /* line 281, ../sass/smts.scss */
   #contact-form {
     -moz-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
     box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
   }
+
+  /* line 266, ../sass/smts.scss */
+  .show-menu {
+    display: block;
+    float: left;
+  }
+
+  /* line 270, ../sass/smts.scss */
+  .stickynav .bit-25 {
+    display: none;
+  }
+
+  /* line 278, ../sass/smts.scss */
+  .navbar-menu ul {
+    position: static;
+    display: none;
+  }
+  /* line 282, ../sass/smts.scss */
+  .navbar-menu li {
+    margin-bottom: 1px;
+    width: 100%;
+  }
 }
 @media (min-width: 30em) and (max-width: 50em) {
-  /* line 287, ../sass/smts.scss */
+  /* line 290, ../sass/smts.scss */
   header {
     height: 132px;
     background-repeat: no-repeat;
@@ -316,39 +321,39 @@ footer {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   }
 
-  /* line 292, ../sass/smts.scss */
+  /* line 295, ../sass/smts.scss */
   .bit-20 {
     width: 100%;
   }
 
-  /* line 295, ../sass/smts.scss */
+  /* line 298, ../sass/smts.scss */
   .bit-25 {
     width: 100%;
   }
 
-  /* line 298, ../sass/smts.scss */
+  /* line 301, ../sass/smts.scss */
   .bit-60 {
     width: 100% !important;
   }
 
-  /* line 301, ../sass/smts.scss */
+  /* line 304, ../sass/smts.scss */
   .bit-75 {
     width: 100%;
   }
 
-  /* line 304, ../sass/smts.scss */
+  /* line 307, ../sass/smts.scss */
   .stickynav {
     display: none;
   }
 
-  /* line 307, ../sass/smts.scss */
+  /* line 310, ../sass/smts.scss */
   .card {
     -moz-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
     box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
   }
 
-  /* line 310, ../sass/smts.scss */
+  /* line 313, ../sass/smts.scss */
   #contact-form {
     -moz-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
@@ -356,7 +361,7 @@ footer {
   }
 }
 @media (min-width: 50em) and (max-width: 70em) {
-  /* line 316, ../sass/smts.scss */
+  /* line 319, ../sass/smts.scss */
   header {
     height: 234.66667px;
     background-repeat: no-repeat;
@@ -365,39 +370,39 @@ footer {
     box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
   }
 
-  /* line 321, ../sass/smts.scss */
+  /* line 324, ../sass/smts.scss */
   .bit-20 {
     width: 100%;
   }
 
-  /* line 324, ../sass/smts.scss */
+  /* line 327, ../sass/smts.scss */
   .bit-25 {
     width: 100%;
   }
 
-  /* line 327, ../sass/smts.scss */
+  /* line 330, ../sass/smts.scss */
   .bit-60 {
     width: 100% !important;
   }
 
-  /* line 330, ../sass/smts.scss */
+  /* line 333, ../sass/smts.scss */
   .bit-75 {
     width: 100%;
   }
 
-  /* line 333, ../sass/smts.scss */
+  /* line 336, ../sass/smts.scss */
   .stickynav {
     display: none;
   }
 
-  /* line 336, ../sass/smts.scss */
+  /* line 339, ../sass/smts.scss */
   .card {
     -moz-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
     box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
   }
 
-  /* line 339, ../sass/smts.scss */
+  /* line 342, ../sass/smts.scss */
   #contact-form {
     -moz-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);

@@ -111,9 +111,9 @@ h3 {
   }
 }
 
-// input[type=checkbox]#show-menu {
-//   display: none;
-// }
+input[type=checkbox]#show-menu {
+  display: none;
+}
 input[type=checkbox]:checked  ~ nav ul {
   display: block;
 }
@@ -260,15 +260,21 @@ footer {
   .card {
     @include box-shadow-med;
   }
-  .show-menu {
+  #contact-form {
+    @include box-shadow-med;
+  }
+   .show-menu {
     display: block;
     float: left;
   }
-  .brand {
+  .stickynav .bit-25 {
     display: none;
   }
+  // .brand {
+  //   visibility: hidden;
+  //   // display: none;
+  // }
   .navbar-menu {
-
     ul {
       position: static;
       display: none;
@@ -277,9 +283,6 @@ footer {
       margin-bottom: 1px;
       width: 100%;
     }
-  }
-  #contact-form {
-    @include box-shadow-med;
   }
 }
 // medium
