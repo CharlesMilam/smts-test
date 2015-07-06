@@ -1,43 +1,37 @@
 @import "compass";
 @import "palette";
-
 $base-font: "Roboto", "Helvetica", "Arial", sans-serif;
 $base-font-size: 16px;
 $base-line-height: 24px;
 @include establish-baseline;
-
 $header-img: "smts-top.png";
-
 @mixin box-shadow-large {
-    -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.2);
 }
-
 @mixin box-shadow-med {
-    -moz-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
 }
-
 @mixin box-shadow-small {
-    -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
-
 @mixin branding-link {
-    a {
+  a {
     color: $primary-color-text;
     text-decoration: none;
     display: inline-block;
     &:after {
-      background: transparent;  // transition effect from http://bradsknutson.com/blog/css-sliding-underline/
+      background: transparent; // transition effect from http://bradsknutson.com/blog/css-sliding-underline/
       content: "";
       display: block;
       width: 0;
       height: 1px;
-      transition: width 0.3s ease-in, background-color  0.3s ease-in;
+      transition: width 0.3s ease-in, background-color 0.3s ease-in;
     }
     &:hover:after {
       width: 100%;
@@ -45,13 +39,11 @@ $header-img: "smts-top.png";
     }
   }
 }
-
 body {
   background-color: $primary-color-text;
   font-family: $base-font;
   color: $primary-text-color;
 }
-
 header {
   @include box-shadow-med;
   background-color: $primary-color-dark;
@@ -60,40 +52,34 @@ header {
   height: image-height("../images/#{$header-img}") * 1.5;
   z-index: 999;
 }
-
 main {
   margin: 1.5em 0;
 }
-
 .bit-20 {
   width: 20%;
 }
-
 h1 {
   font-size: $base-font-size * 2;
 }
 h3 {
   font-size: $base-font-size * 1.5;
 }
-
 .brand {
   padding: 0.75em;
   @include branding-link;
 }
-
 .stickynav {
   background-color: $primary-color-dark;
   min-width: 100%;
   position: fixed;
 }
-
 .navbar-menu {
   background-color: $primary-color-dark;
   color: $primary-color-text;
   nav {
     & a {
-        color: $primary-color-text;
-        text-decoration: none;
+      color: $primary-color-text;
+      text-decoration: none;
       &#pull {
         display: none;
       }
@@ -108,79 +94,73 @@ h3 {
     padding: 0.75em 0.625em;
     text-align: center;
     @include single-transition(background-color, 0.3s, ease-out);
-    &:hover{
+    &:hover {
       background-color: $primary-color;
       @include single-transition(background-color, 0.3s, ease-in);
     }
   }
 }
+
 // hidden label and checkbox for displaying menu for small/medium media
 input[type=checkbox]#show-menu {
   display: none;
 }
-input[type=checkbox]:checked  ~ nav ul {
+input[type=checkbox]:checked ~ nav ul {
   display: block;
 }
 .show-menu {
   display: none;
   @include branding-link;
 }
-
 .content {
 
 }
-
-.content h1, .content h2, .content h3, .content h4 {
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
   text-align: center;
 }
-
 .card {
   background: $primary-color-text;
   border: 1px solid $divider-color;
   @include box-shadow-large;
-  max-width: 100%
+  max-width: 100%;
 }
-
 .content .card {
 
 }
-
 .card-content {
   padding: 1em;
 }
-
-.card-content h1, .card-content h2, .card-content h3, .card-content h4 {
+.card-content h1,
+.card-content h2,
+.card-content h3,
+.card-content h4 {
   margin: 0.5em;
   text-align: center;
 }
-
 .card-content p {
   margin: 0.5em;
 }
-
 .card-content i {
   color: #212121;
   display: block;
   text-align: center;
 }
-
 .sidebar {
 
 }
-
 .sidebar .card {
 
 }
-
 .form-container {
 
 }
-
 footer {
   background-color: #388e3c;
   height: 1px;
 }
-
 #contact-form {
   background-color: $primary-color-light;
   border: 1px solid scale-lightness($primary-color-light, -5%);
@@ -188,23 +168,22 @@ footer {
   margin: 0 auto;
   padding: 0.5em;
 }
-
 #contact-form h3 {
   text-align: center;
 }
-
-#contact-form input, label, textarea {
+#contact-form input,
+label,
+textarea {
   display: block;
-  margin: 5px auto 3px auto;
-  padding: 5px 5px 5px 5px;
+  margin: 5px auto 3px;
+  padding: 5px;
   width: 80%;
 }
-
-#contact-form input, textarea {
+#contact-form input,
+textarea {
   border: 1px solid $divider-color;
   margin-top: -5px;
 }
-
 #contact-form button {
   background-color: #2196f3;
   border: none;
@@ -212,14 +191,12 @@ footer {
   @include box-shadow-small;
   display: block;
   min-height: 30px;
-  margin: 10px auto 10px auto;
+  margin: 10px auto;
   min-width: 65%;
 }
-
 .header-btn {
   text-align: right;
 }
-
 .header-btn button {
   font-size: 1.5em;
   background-color: #2196f3;
@@ -232,14 +209,13 @@ footer {
   min-width: 25%;
   padding: 1em;
 }
-
 #header-img {
-    background-color: #b6b6b6;
+  background-color: #b6b6b6;
 }
-
 #header-img img {
   width: 100%;
 }
+
 // small
 @media (max-width: 30em) {
   header {
@@ -266,7 +242,7 @@ footer {
   #contact-form {
     @include box-shadow-med;
   }
-   .show-menu {
+  .show-menu {
     display: block;
     float: left;
   }
@@ -284,12 +260,14 @@ footer {
     }
   }
 }
+
 // medium
 @media (min-width: 30em) and (max-width: 50em) {
   header {
     background-image: none;
     background: $primary-color-dark;
     height: 3em;
+
     // background-repeat: no-repeat;
     @include box-shadow;
   }
@@ -329,6 +307,7 @@ footer {
     }
   }
 }
+
 // large
 @media (min-width: 51em) and (max-width: 70em) {
   header {
@@ -336,6 +315,7 @@ footer {
     background-repeat: no-repeat;
     @include box-shadow-med;
   }
+
   // .bit-20 {
   //   width: 40%;
   // }
@@ -345,6 +325,7 @@ footer {
   .bit-60 {
     width: 80% !important;
   }
+
   // .bit-75 {
   //   width: 80% !important;
   // }
